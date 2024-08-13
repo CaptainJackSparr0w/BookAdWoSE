@@ -30,8 +30,8 @@
 
  const carouselTrack = document.querySelector('.carousel-track');
  const images = document.querySelectorAll('.carousel-image');
- const prevButton = document.getElementById('prevButton');
- const nextButton = document.getElementById('nextButton');
+//  const prevButton = document.getElementById('prevButton');
+//  const nextButton = document.getElementById('nextButton');
  const modal = document.getElementById('modal');
  const modalImage = document.getElementById('modalImage');
  const closeButton = document.getElementById('closeButton');
@@ -44,15 +44,15 @@
      carouselTrack.style.transform = `translateX(${offset}px)`;
  }
 
- function nextImage() {
-     currentIndex = (currentIndex + 1) % images.length;
-     updateCarousel();
- }
+//  function nextImage() {
+//      currentIndex = (currentIndex + 1) % images.length;
+//      updateCarousel();
+//  }
 
- function prevImage() {
-     currentIndex = (currentIndex - 1 + images.length) % images.length;
-     updateCarousel();
- }
+//  function prevImage() {
+//      currentIndex = (currentIndex - 1 + images.length) % images.length;
+//      updateCarousel();
+//  }
 
  images.forEach((image, index) => {
      image.addEventListener('click', () => {
@@ -65,7 +65,7 @@
      modal.style.display = 'none';
  });
 
- nextButton.addEventListener('click', nextImage);
- prevButton.addEventListener('click', prevImage);
+//  nextButton.addEventListener('click', nextImage);
+//  prevButton.addEventListener('click', prevImage);
 
 //  setInterval(nextImage, 3000); // Auto-scroll every 3 seconds
